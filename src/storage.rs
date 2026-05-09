@@ -1,5 +1,5 @@
 use std::fs;
-use std::io::{self, Write};
+use std::io::Write;
 use std::path::Path;
 
 use crate::task::Task;
@@ -82,6 +82,7 @@ impl Storage {
     /// CONCEPTO RUST:
     /// - iter_mut() permite iterar Y modificar
     /// - find() usa un closure (función anónima)
+    #[allow(dead_code)]
     pub fn update_task(&self, updated_task: &Task) -> Result<(), String> {
         let mut tasks = self.load_tasks()?;
 

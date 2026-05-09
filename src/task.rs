@@ -75,6 +75,7 @@ impl Task {
     }
 
     /// Actualiza la descripción
+    #[allow(dead_code)]
     pub fn update_description(&mut self, description: Option<String>) {
         self.description = description;
         self.updated_at = Utc::now();

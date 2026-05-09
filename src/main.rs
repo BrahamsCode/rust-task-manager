@@ -4,9 +4,8 @@ mod task;
 mod storage;
 
 use std::env;
-use std::io::{self, Write};
 
-use task::{Task, TaskStatus};
+use task::Task;
 use storage::Storage;
 
 /// Muestra el menú de ayuda
